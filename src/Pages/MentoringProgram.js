@@ -1,13 +1,10 @@
 import React from "react";
 import Layout from "../Layout";
-import MentorProgram from "../Components/MentorProgram";
 import styled from "styled-components";
 import CareerImage from "../../src/Assets/Image/careerImage.svg";
 
 
 import mentor from "../Assets/Image/mentor.png";
-import { Link } from "react-router-dom";
-
 
 const Style = styled.section`
   background-image: url(${CareerImage});
