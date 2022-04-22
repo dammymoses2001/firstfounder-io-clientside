@@ -75,7 +75,6 @@ export default function MentoringProgram() {
             <p>Please complete the Mentor Application here  to begin your journey of supporting our startup community. This call is open to mentors from different regions. You are requested to apply before May 20, 2022</p>
             <a rel="noreferrer" href="https://forms.gle/khpFCZPLMcGVWVwf8" target="_blank" className="btn btn-primary">Apply Here</a>
           </div>
-
           <p>If you have any questions or concerns, please do not hesitate to reach out via email at  <a href="mailto:hello@thefirstfounders.com" target="_blank" rel="noreferrer"> hello@thefirstfounders.com </a>. We look forward to connecting and working with you!</p>
 
         </div>
