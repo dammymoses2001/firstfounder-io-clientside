@@ -1,7 +1,6 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import styled from "styled-components";
-//
 import CareerImage from "../../Assets/Image/careerImage.svg";
 import { HashLink as Link } from "react-router-hash-link";
 

@@ -36,7 +36,7 @@ export default function VentureBooth() {
         button
       />
       <Background>
-        <div class="boothbackground">
+        <div className="boothbackground">
           <img src={VentureandBenefitBackground} alt="" />
         </div>
         <VentureBoothComp />

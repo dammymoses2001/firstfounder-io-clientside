@@ -1,77 +1,73 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import { Link as Link2 } from "react-scroll";
-import { HashLink as Link3 } from "react-router-hash-link";
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import Logo from "../../Assets/Image/Logo.png";
 
 export default function Index() {
-  // const location = useLocation();
+
+  const location = useLocation();
+
   return (
-    <div>
+    
       <Navbar bg="light" expand="xl" fixed="top">
-        <Container fluid>
+        <div className="container">
           <Link to="/" className="nav-brand">
             <img src={Logo} alt="" style={{ width: "200px" }} />
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link3 to="/#startup" className="nav-link">
-                Startups
-              </Link3>
-
               <Link className="nav-link" to="/about"> 
-                About
+                <span className={location.pathname.includes("about") ? "nav-active mx-2" : "mx-2"}>About</span>
               </Link>
 
               <Link className="nav-link" to="/whatwedo">
-                what We do
+                <span className={location.pathname.includes("whatwedo") ? "nav-active mx-2" : "mx-2"}>what We do</span>
               </Link>
               <Link to="/howitworks" className="nav-link">
-                How we Work
+                <span className={location.pathname.includes("howitworks") ? "nav-active mx-2" : "mx-2"}>How we Work</span>
               </Link>
-              <NavDropdown title="Apply" id="basic-nav-dropdown">
-                <Link to="/venturebooth" class="dropdown-item">
+              <Link className="nav-link" to="/team" >
+                <span className={location.pathname.includes("team") ? "nav-active mx-2" : "mx-2"}>Team</span>
+              </Link>
+              <NavDropdown title="Apply" className="nav-active mx-2">
+                <Link to="/venturebooth" className="dropdown-item my-1">
                   The Venture Booth
                 </Link>
-                <Link to="/foundersinresidenceprogram" class="dropdown-item">
+                <Link to="/foundersinresidenceprogram" className="dropdown-item my-1">
                   Founders-in-Residence Program
                 </Link>
-                <Link to="/mvp" class="dropdown-item">
+                <Link to="/mvp" className="dropdown-item my-1">
                   MVP Acclerator Program
                 </Link>
-                <Link to="/careers" class="dropdown-item">
+                <Link to="/careers" className="dropdown-item my-1">
                   Careers
                 </Link>
-                <Link to="/mentoringprogram" class="dropdown-item">
-                  Firstfounders Mentoring Program
+                <Link to="/pitchdeck" className="dropdown-item my-1">
+                  Pitch Deck
+                </Link>
+                <Link to="/network" className="dropdown-item my-1">
+                  The Founders Network
+                </Link>
+                <Link to="/mentoringprogram" className="dropdown-item my-1">
+                  Mentoring Program
                 </Link>
               </NavDropdown>
-              <NavDropdown title="Media" id="basic-nav-dropdown">
-                <a href="https://medium.com/@thefirstfounders" target={"_blank"} class="dropdown-item" rel="noreferrer">
-                  Blog
-                </a>
-                <Link to="/press" class="dropdown-item">
-                  Press
-                </Link>
-                {/* <Link to="/blog" class="dropdown-item">
-                  Event
-                </Link> */}
+              <NavDropdown title="Media" id="basic-nav-dropdown"  className="nav-active mx-2">
+                <a href="https://medium.com/@thefirstfounders" target={"_blank"} className="dropdown-item my-1" rel="noreferrer">Blog</a>
+                <Link to="/press" className="dropdown-item my-1">Press</Link>
+                <Link to="/event" className="dropdown-item my-1">Event</Link>
               </NavDropdown>
-              <Link3 className="nav-link" to="/#team">
-                team
-              </Link3>
-
+            
               <Link to="/contact" className="nav-link">
-                Contact
+                <span className={location.pathname.includes("contact") ? "nav-active mx-2" : "mx-2"}>Contact</span>
               </Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
-    </div>
+   
   );
 }

@@ -31,9 +31,9 @@ export default function MVPAcceleration() {
                 title="MVP Accelerator Program"
                 backgroundColor="#f8f9ff"
                 body={
-                    <div class="w-100 mvp">
-                        <p class="fw-bold">What we really do for you.</p>
-                        <ul class="pl-4 my-5">
+                    <div className="w-100 mvp">
+                        <p className="fw-bold">What we really do for you.</p>
+                        <ul className="pl-4 my-5">
                             <li>
                                 <span>Product Scoping </span> – We help you with
                                 structured product development process
@@ -61,19 +61,19 @@ export default function MVPAcceleration() {
                                 acquisition, conversion, adoption and retention.
                             </li>
                         </ul>
-                        <p class="mb-5 fw-bold">
+                        <p className="mb-5 fw-bold">
                             Want To Talk About Your Project MVP? Schedule A Call
                         </p>
                         <div>
                             <a
-                                class="btn btn-primary btn-md mb-6 fw-bold"
+                                className="btn btn-primary btn-md mb-6 fw-bold"
                                 target="_blank"
                                 href="https://calendly.com/thefirstfounders/60min"
                                 rel="noreferrer"
                             >
                                 Schedule A Call
                             </a>
-                            {/* <button class="btn btn-primary btn-md mb-6">Apply</button> */}
+                            {/* <button className="btn btn-primary btn-md mb-6">Apply</button> */}
                         </div>
                     </div>
                 }

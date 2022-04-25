@@ -4,13 +4,11 @@ import CareerHeader from "../Components/CareerHeader";
 import GetInTouch from "../Components/GetInTouch";
 import CareerPosition from "../Components/CareerPosition";
 import SinglePosition from "../Components/singlePosition";
-// import { Careerdata } from "../Data";
 import { useSelector } from "react-redux";
 
 export default function Careers() {
   const [info, setInfo] = useState({});
   const OpenPosition = useSelector((state) => state.OpenPosition);
-  // console.log(OpenPosition);
   return (
     <Layout title={"Careers"}>
       {!info._id && (

@@ -1,15 +1,10 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import Header from "../HeaderComp";
 import Header2 from "../Header";
 import styled from "styled-components";
 
-import HeaderImage2 from "../../Assets/Image/mvpbackground.png";
-import HeaderImage3 from "../../Assets/Image/header2.png";
 import HeaderImage from "../../Assets/Image/HomeImage.png";
 
-import BackgroundImage from "../../Assets/Image/boothHeaderImage2.png";
-import HeaderImage4 from "../../Assets/Image/boothHeaderImage.png";
 
 const Styled = styled.div`
     .carousel-control-next,
@@ -30,7 +25,7 @@ export default function index() {
                 <Carousel.Item>
                     <Header2
                         background={HeaderImage}
-                        title=" A Venture Studio partnering with early-stage founders to grow
+                        title="A Venture Studio partnering with early-stage founders to grow
                 and scale startups."
                         desc=" We are helping early stage founders build MVP, product scoping,
                 UI/UX and custom product software so they can go to market
@@ -41,15 +36,15 @@ export default function index() {
                         buttonLink="/whatwedo"
                     />
                 </Carousel.Item>
-                <Carousel.Item>
+                {/* <Carousel.Item>
                     <Header
                         BackgroundImage={BackgroundImage}
                         HeaderImage={HeaderImage4}
                         backgroundColor=" #00162c;"
                         button
                     />
-                </Carousel.Item>
-                <Carousel.Item>
+                </Carousel.Item> */}
+                {/* <Carousel.Item>
                     <Header2
                         background={HeaderImage3}
                         title=" We are building the future 
@@ -75,9 +70,9 @@ export default function index() {
                             </span>
                         }
                         desc="We can help you bring your product idea to life whether it is a 
-            Minimum Viable Product (MVP); UX/UI; Product Scoping or help to scale your startup. "
+            Minimum Viable Product (MVP); UX/UI; Product Scoping or help to scale your startup."
                     />
-                </Carousel.Item>
+                </Carousel.Item> */}
             </Carousel>
         </Styled>
     );

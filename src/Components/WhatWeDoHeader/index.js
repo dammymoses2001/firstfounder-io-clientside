@@ -30,7 +30,7 @@ export default function index() {
                 <Carousel.Item>
                     <Header
                         BackgroundImage={BackgroundImage}
-                        HeaderImage={HeaderImage}
+                        HeaderImage="/img/booth.svg"
                         backgroundColor=" #00162c;"
                         button
                     />

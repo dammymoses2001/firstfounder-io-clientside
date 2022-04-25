@@ -35,17 +35,17 @@ export default function index({ title, body, backgroundColor, marginBottom }) {
               className="text-uppercase"
               data-aos="fade-down"
               data-aos-duration="400"
+              data-aos-once={true}
             >
               {title}
             </h5>
-            <div className="w-25">
-              <hr />
-            </div>
+            <div className="w-25"><hr /></div>
           </div>
           <div
             className={`d-flex justify-content-center ${marginBottom}`}
             data-aos="fade-down"
             data-aos-duration="600"
+            data-aos-once={true}
           >
             {body}
           </div>

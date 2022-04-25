@@ -46,7 +46,7 @@ export default function index({ data }) {
     <Style>
       <section className="startup">
         <div className="container">
-          <div className="mb-5" data-aos="fade-down" data-aos-duration="300">
+          <div className="mb-5" data-aos="fade-down" data-aos-duration="300" data-aos-once="true">
             <h5 className="text-uppercase">Our Startup Focus</h5>
             <hr />
             <div className="">
@@ -69,6 +69,7 @@ export default function index({ data }) {
                 }  `}
                 data-aos="fade-right"
                 data-aos-duration={`${index * 400}`}
+                data-aos-once="true"
               >
                 <div className="ImageWrapper">
                   <img src={item?.image} alt="" />

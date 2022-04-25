@@ -20,19 +20,19 @@ export default function FoundersInResidence() {
         title="FOUNDERS-IN-RESIDENCE PROGRAM"
         backgroundColor="#f8f9ff"
         body={
-          <div class="w-75">
+          <div className="w-75">
             <p>
               Just before we choose a founder to work with us, we try to
               understand the founder’s profile and skills across four key
               dimensions:
             </p>
-            <ul class="pl-4 my-5">
+            <ul className="pl-4 my-5">
               <li>Entrepreneurial mindset</li>
               <li>Analytical Skills</li>
               <li>Communication Skills</li>
               <li>Tech Startup Ecosystem knowledge/expertise.</li>
             </ul>
-            <p class="mb-5">
+            <p className="mb-5">
               The founders join at the very beginning of the venture, before the
               product building begins or teams formed, so that they can build
               and own the full journey. Sometimes, we start building before the
@@ -41,12 +41,11 @@ export default function FoundersInResidence() {
             </p>
             <div>
               <Link
-                class="btn btn-primary btn-md mb-6 fw-bold"
+                className="btn btn-primary btn-md mb-6 fw-bold"
                 to="/venturefoundersinresidence"
               >
                 Apply
               </Link>
-              {/* <button class="btn btn-primary btn-md mb-6">Apply</button> */}
             </div>
           </div>
         }

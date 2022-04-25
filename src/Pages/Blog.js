@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 
 export default function Blog() {
   const BlogsData = useSelector((state) => state.Blogs.Blogs);
-  // //console.log.log(BlogsData);
   return (
     <Layout title="Blog">
       <BlogList data={blogData} data1={BlogsData} />

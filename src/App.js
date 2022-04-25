@@ -10,6 +10,8 @@ import MVPAcceleration from "./Pages/MVP-Acceleration";
 import Built from "./Pages/Founders-In-Residence-Program";
 import HowitWorks from "./Pages/HowitWorks";
 import MeetTheTeam from "./Pages/MeetTheTeam";
+import PitchDeck from "./Pages/PitchDeck";
+import FoundersNetwork from "./Pages/Network";
 import Contact from "./Pages/Contact";
 import Press from "./Pages/Press";
 import Blog from "./Pages/Blog";
@@ -80,6 +82,8 @@ function App() {
       <Route exact path="/whatwedo" component={WhatWeDo} />
       <Route exact path="/venturebooth" component={VentureBooth} />
       <Route exact path="/team" component={MeetTheTeam} />
+      <Route exact path="/pitchdeck" component={PitchDeck} />
+      <Route exact path="/network" component={FoundersNetwork} />
       <Route exact path="/foundersinresidenceprogram" component={Built} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/mvp" component={MVPAcceleration} />

@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { HashLink as Link } from "react-router-hash-link";
 import LazyImage from "../Lazy_Load_Image";
-// import { Link } from "react-router-dom";
 
-// import HeaderImage from "../../Assets/Image/HomeImage.png";
 const Style = styled.div`
   /* Header */
   .header {
@@ -47,11 +45,12 @@ export default function index({
       <section className="header">
         <div className="container">
           <div className="row pt-6">
-            <div className={smallScreen ? "col-md-6 mb-5" : "col-md-8"}>
+            <div className="col-xl-7 col-lg-10">
               <h1
-                className="mb-4"
+                className="mb-4 header-style text-center text-sm-start"
                 data-aos="fade-right"
                 data-aos-duration="1000"
+                data-aos-once="true"
               >
                 {title}
               </h1>
@@ -59,11 +58,11 @@ export default function index({
                 {desc}
               </p>
 
-              <div className="mb-5" data-aos="fade-up" data-aos-duration="2000">
+              <div className="mb-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000">
                 {buttonLink && (
                   <Link
-                    class={`btn btn-primary btn-md   ${
-                      smallScreen ? null : "mb-6"
+                    className={`btn py-3 btn-primary btn-md   ${
+                      smallScreen ? null : "mb-6 text-center text-sm-start"
                     }`}
                     to={buttonLink}
                   >
@@ -72,7 +71,7 @@ export default function index({
                 )}
                 {buttonLink1 && (
                   <a
-                    class={`btn btn-primary btn-md data-aos="fade-up"  ${
+                  className={`btn btn-primary btn-md data-aos="fade-up"  ${
                       smallScreen ? null : "mb-6"
                     }`}
                     href={buttonLink1}
@@ -82,9 +81,7 @@ export default function index({
                     {buttonText}
                   </a>
                 )}
-                {/* <button className=" btn-primary btn-upload">
-                    {buttonText}
-                  </button> */}
+            
               </div>
             </div>
             {sideImage && (

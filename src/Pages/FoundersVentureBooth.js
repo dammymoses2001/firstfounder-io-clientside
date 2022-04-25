@@ -15,23 +15,23 @@ export default function FoundersInResidence() {
     return (
         <Layout title="Founders-in-Residence">
             <Style>
-                <section class="application">
-                    <div class="container">
+                <section className="application">
+                    <div className="container">
                         <div
-                            class="mb-5"
+                            className="mb-5"
                             data-aos="fade-right"
                             data-aos-duration="300"
                         >
-                            <h5 class="text-uppercase ">
+                            <h5 className="text-uppercase ">
                                 application form for The Venture Booth
                             </h5>
 
-                            <div class="w-25">
+                            <div className="w-25">
                                 <hr />
                             </div>
                             <p>Each field can only take 200 characters</p>
                         </div>
-                        <div class="mb-5">
+                        <div className="mb-5">
                             <VentureBoothForm />
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import BackgroundImage from "../../Assets/Image/headerbackground3.png";
-import howitworksImage from "../../Assets/Image/howitworksImage.png";
+// import howitworksImage from "/img/howwework.svg";
 import LazyLoad from "../Lazy_Load_Image";
 
 const Style = styled.div`
@@ -21,7 +21,7 @@ const Style = styled.div`
     object-fit: cover;
   }
 `;
-// import HeaderBackground from '../Header3/'
+
 
 export default function index() {
   return (
@@ -32,7 +32,7 @@ export default function index() {
             <h1 className="mt-5">How We Work</h1>
           </div>
           <div data-aos="fade-right" data-aos-duration="500">
-            <LazyLoad image={howitworksImage} alt="" />
+            <LazyLoad image='/img/howwework.svg' alt="" />
           </div>
         </div>
       </section>

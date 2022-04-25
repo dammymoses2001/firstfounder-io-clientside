@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-// import BoothImage from "../../Assets/Image/boothImage1.png";
 
 const Style = styled.div`
   .whatprogram .card {
@@ -58,7 +57,7 @@ export default function index({ data }) {
           >
             <Link
               to="/ventureboothapplication"
-              class=" btn-primary btn-upload fw-bold "
+              className=" btn-primary btn-upload fw-bold "
             >
               Apply Now
             </Link>

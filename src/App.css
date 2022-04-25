@@ -7,8 +7,12 @@
 }
 
 
-/* Newly added css by Zion */
-
+/*==============================
+BEGIN NEWLY ADDED STYLE BY ZION
+===============================*/
+.join{
+  margin-top: 7rem;
+}
 .img-width{
   width: 70%;
 }
@@ -19,9 +23,86 @@
   text-shadow: -4px 2px 4px rgba(51, 204, 204, 0.4);
   font-weight: 700 !important;
 }
+.color-primary{
+  color: #33CCCC !important;
+}
+.bg-main-color{
+  background: #33CCCC !important;
+}
+.color-warning{
+  color: #F7B525 !important;
+}
+.nav-active{
+  color: #33CCCC!important;
+}
+.dropDown{
+  background: #33CCCC!important;
+}
+.header-style{
+  text-shadow: -4px 2px 4px rgba(51, 204, 204, 0.4);
+}
+.line-height{
+  line-height: 1.7rem;
+}
+.text-justify{
+  text-align: justify;
+}
+
+.slick-slide > div {
+  margin: 0 30px;
+}
 
 
-/* End of newly added css by Zion */
+.slick-dots li {
+  top: 30px;
+  background: #a4a6aa;
+  border-radius: 100%;
+  width: .9rem!important;
+  height: .9rem!important;
+}
+.slick-dots button {
+  border-radius: 100%;
+  text-indent: -9999px;
+}
+.slick-dots li.slick-active  {
+  background-color: #33CCCC!important;
+  width: .9rem;
+  height: .9rem;
+}
+.switch{
+  width: 24rem!important;
+  height: 50px;
+}
+.mb-switch{
+  margin-bottom: 3rem;
+}
+.team-tab{
+  background-color: #fff;
+  font-size: 18px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: #979797!important;
+}
+.team-tab:hover{
+  border-bottom: 4px solid #000000;
+} 
+.team-tab-active{
+  color: #000000!important;
+  border-bottom: 4px solid #000000;
+} 
+
+
+@media(max-width: 600px){
+  .slick-slide > div {
+    margin: 0;
+  }
+}
+/*============================ 
+END NEWLY ADDED SYTLE BY ZION 
+=============================*/
 
 .nav-link {
   text-transform: capitalize;
@@ -29,9 +110,9 @@
   margin: 0 8px !important;
   font-weight: 500 !important;
 }
-/* .dropdown-item:hover{
-
-} */
+.dropdown-item:hover{
+  background: #33CCCC!important;
+}
 .navbar-toggler {
   box-shadow: none !important;
 }
@@ -69,7 +150,7 @@ section {
   box-shadow: none !important;
 }
 .dropdown-menu {
-  background-color: #33cccc !important;
+  background-color: #fff !important;
   padding: 10px 5px !important;
 }
 .btn,

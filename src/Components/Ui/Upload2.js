@@ -13,15 +13,15 @@ const Style = styled.div`
 export default function Upload2({ label, placeholder, onChange, ...props }) {
   return (
     <Style>
-      <div class="custom-file">
+      <div className="custom-file">
         <p>{placeholder}</p>
         <input
           type="file"
-          class="custom-file-input"
+          className="custom-file-input"
           onChange={onChange}
           {...props}
         />
-        {label && <label class="custom-file-label my-3">{label}</label>}
+        {label && <label className="custom-file-label my-3">{label}</label>}
       </div>
     </Style>
   );

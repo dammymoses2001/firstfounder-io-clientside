@@ -4,8 +4,6 @@ import styled from "styled-components";
 import CareerImage from "../../src/Assets/Image/careerImage.svg";
 
 
-import mentor from "../Assets/Image/mentor.png";
-
 const Style = styled.section`
   background-image: url(${CareerImage});
 
@@ -25,20 +23,20 @@ export default function MentoringProgram() {
 
   
   return (
-    <Layout title="Founders-In-Residence-Program">
+    <Layout title="Mentoring Program">
   
       <Style>
         <div className="container mt-custom">
           <div className="row d-flex justify-content-center align-items-center g-3">
-            <div className="col-lg-6">
-              <h1 className="text-center fw-bolder mb-4">Call for Mentors (Startup Advisors)</h1>
-              <p className="text-center">Mentoring and choosing to shape the future of young people while discussing ideas for growth and impact is always a boon for mentees.</p>
-              <div className="text-center">
+            <div className="col-lg-6 text-center">
+              <h1 className="fw-bolder mb-4">Call for Mentors (Startup Advisors)</h1>
+              <p>Mentoring and choosing to shape the future of young people while discussing ideas for growth and impact is always a boon for mentees.</p>
+              <div>
                 <a href="#mentor" className="btn btn-primary  py-3 px-4">Get Started</a>
               </div>
             </div>
             <div className="col-lg-6 text-center">
-              <img className="img-fluid img-width" src={mentor} alt="mentor Img" />
+              <img className="img-fluid img-width" src="/img/mentor.png" alt="mentor Img" />
             </div>
           </div>
         </div>

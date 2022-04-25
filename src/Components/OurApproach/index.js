@@ -63,6 +63,7 @@ export default function index({ data }) {
               className="col-md-4"
               data-aos="fade-right"
               data-aos-duration="300"
+              data-aos-once="true"
             >
               <h5>OUR APPROACH</h5>
               <hr />
@@ -79,6 +80,7 @@ export default function index({ data }) {
                     className="col-md-6 mb-4 "
                     data-aos="fade-down"
                     data-aos-duration="400"
+                    data-aos-once="true"
                   >
                     <div className="mb-3 imageWrapper">
                       <img src={item?.image} alt="" />

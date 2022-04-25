@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../Layout";
 import HeaderComp from "../Components/WhatWeDoHeader";
 import WhatWeDoComp from "../Components/WhatWeDoComp";
-// import AboutUs from "../Components/AboutUs";
 
 //Images
 import BackgroundImage from "../Assets/Image/boothHeaderImage2.png";
@@ -123,7 +122,7 @@ export default function WhatWeDo() {
             <div className="mb-6">
               <Link
                 to="/foundersinresidenceprogram"
-                className=" btn-primary btn-upload fw-bold  "
+                className=" btn-primary btn-upload fw-bold"
               >
                 See More
               </Link>
@@ -150,24 +149,24 @@ export default function WhatWeDo() {
               <ul className="pl-4">
                 <li>
                   {" "}
-                  <span className="fw-bold">Product Scoping</span> – We help you
+                  <b>Product Scoping</b> – We help you
                   with structured product development process consisting of
                   research, business model, complete user flow, tech scope and
                   focus discussions to align product with founder’s business
                   vision.
                 </li>
                 <li>
-                  <span className="fw-bold">UI/UX </span>– We help you design an
+                  <b>UI/UX </b>– We help you design an
                   engaging product that is easy-to-use, attractive and
                   functional with access to key product screens or prototype.
                 </li>
                 <li>
-                  <span className="fw-bold">MVP Builder</span> – We help you go
+                  <b>MVP Builder</b> – We help you go
                   to market quickly with high-quality Minimum Viable Products
                   and this comprises of product scoping, UI/UX and development.
                 </li>
                 <li>
-                  <span className="fw-bold">Growth Hacking Services</span> – We
+                  <b>Growth Hacking Services</b> – We
                   help early stage founders test new ideas or explore market fit
                   across the entire growth hacking end-to-end journey including,
                   discovery, acquisition, conversion, adoption, and retention.
@@ -176,19 +175,16 @@ export default function WhatWeDo() {
             </div>
 
             <p className="mb-5">
-              Want To Talk About Your Project MVP? Schedule A Call
-            </p>
-
-            <div className="mb-6">
               <a
                 href="https://calendly.com/thefirstfounders/60min"
                 target="_blank"
-                className=" btn-primary btn-upload fw-bold  "
+                className="color-primary"
                 rel="noreferrer"
               >
-                Schedule A Call
+                Want To Talk About Your Project MVP? Schedule A Call
               </a>
-            </div>
+              
+            </p>
           </div>
         }
       />

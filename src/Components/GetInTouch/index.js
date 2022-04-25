@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { MdKeyboardArrowRight } from "react-icons/md";
-// Demo styles, see 'Styles' section below for some notes on use.
-// import "react-accessible-accordion/dist/fancy-example.css";
-import { Link } from "react-router-dom";
-// import { Link as Link2 } from "react-scroll";
 import { HashLink as Link3 } from "react-router-hash-link";
 
 import touchImage from "../../Assets/Image/touchImage.png";
@@ -32,14 +28,13 @@ const Style = styled.div`
   h5 {
     font-weight: 400;
     text-transform: uppercase;
-    color: #33cccc;
   }
 
-  .d-flex {
+  .touch {
     padding: 10px 10px;
     transform: 1s all;
   }
-  .d-flex:hover {
+  .touch:hover {
     background: #d8f5ff;
   }
   a {
@@ -61,9 +56,8 @@ export default function index({ background }) {
           <img src={touchImage} alt="" />
         </div>
         <div className="container">
-          <div className="mb-7" data-aos="fade-down" data-aos-duration="300">
+          <div className="mb-4" data-aos="fade-down" data-aos-duration="300" data-aos-once={true}>
             <h5 className="text-uppercase">GET IN TOUCH</h5>
-
             <hr />
           </div>
 
@@ -72,18 +66,15 @@ export default function index({ background }) {
               className="wrapper"
               data-aos="fade-right"
               data-aos-duration="2000"
+              data-aos-once={true}
             >
-              <div className="d-flex justify-content-between">
-                {/* <Link></Link> */}
-                <h5>
-                  <span className="pe-3">01</span>{" "}
-                  <Link3 to="/whatwedo" smooth={true} duration={400}>
-                    BUILD WITH US{" "}
-                  </Link3>
-                </h5>
-                <span>
-                  <MdKeyboardArrowRight size={40} />
-                </span>
+              <div className="touch">
+                <Link3 to="/whatwedo" smooth={true} duration={400}> 
+                  <div className="d-flex align-items-center justify-content-between">
+                    <h5 className="m-0"><span className="pe-3">01</span>BUILD WITH US</h5>
+                    <MdKeyboardArrowRight size={40} />
+                  </div>
+                </Link3>
               </div>
               <hr className="my-4" />
             </div>
@@ -91,15 +82,15 @@ export default function index({ background }) {
               className="wrapper"
               data-aos="fade-right"
               data-aos-duration="500"
+              data-aos-once={true}
             >
-              <div className="d-flex justify-content-between">
-                <h5>
-                  <span className="pe-3">02</span>{" "}
-                  <Link3 to="/contact">PARTNER WITH US</Link3>
-                </h5>
-                <span>
-                  <MdKeyboardArrowRight size={40} />
-                </span>
+              <div className="touch">
+                <Link3 to="/contact" smooth={true} duration={400}> 
+                  <div className="d-flex align-items-center justify-content-between">
+                    <h5 className="m-0"><span className="pe-3">02</span>PARTNER WITH US</h5>
+                    <MdKeyboardArrowRight size={40} />
+                  </div>
+                </Link3>
               </div>
               <hr className="my-4" />
             </div>
@@ -107,15 +98,15 @@ export default function index({ background }) {
               className="wrapper"
               data-aos="fade-right"
               data-aos-duration="400"
+              data-aos-once={true}
             >
-              <div className="d-flex justify-content-between">
-                <h5>
-                  <span className="pe-3">03</span>{" "}
-                  <Link to="/venturebooth">THE VENTURE BOOTH</Link>
-                </h5>
-                <span>
-                  <MdKeyboardArrowRight size={40} />
-                </span>
+              <div className="touch">
+                <Link3 to="/venturebooth" smooth={true} duration={400}> 
+                  <div className="d-flex align-items-center justify-content-between">
+                    <h5 className="m-0"><span className="pe-3">03</span>THE VENTURE BOOTH</h5>
+                    <MdKeyboardArrowRight size={40} />
+                  </div>
+                </Link3>
               </div>
               <hr className="my-4" />
             </div>
@@ -123,15 +114,15 @@ export default function index({ background }) {
               className="wrapper"
               data-aos="fade-right"
               data-aos-duration="500"
+              data-aos-once={true}
             >
-              <div className="d-flex justify-content-between">
-                <h5>
-                  <span className="pe-3">04</span>{" "}
-                  <Link3 to="#footer">SIGN UP FOR OUR NEWSLETTER</Link3>
-                </h5>
-                <span>
-                  <MdKeyboardArrowRight size={40} />
-                </span>
+              <div className="touch">
+                <Link3 to="#footer" smooth={true} duration={400}> 
+                  <div className="d-flex align-items-center justify-content-between">
+                    <h5 className="m-0"><span className="pe-3">04</span>SIGN UP FOR OUR NEWSLETTER</h5>
+                    <MdKeyboardArrowRight size={40} />
+                  </div>
+                </Link3>
               </div>
               <hr />
             </div>
